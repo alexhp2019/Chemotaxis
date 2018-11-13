@@ -1,21 +1,39 @@
-   size (300,300);
-   strokeWeight(1);
-   float startX = 150;   
-   float startY = 150;  
-   float endX = 0;
-   float endY = 0;
+void setup()
+ {
+  size (300,300);
+  frameRate(20);
  }   
  void draw()   
  {    
-   //move and show the bacteria   
+     
  }  
  class Bacteria    
  { 
-   endX = startX + (int)(Math.random) * 10;
-   endY = startY + (int) (Math.random)*10;
-   while (x<300 && y<300)
+   int myX = 150;
+   int myY = 150;
+   int myColor = 250;
+   void move()
    {
-  
-   
+    if (Math.random()< 0.5)
+    {
+      myX++;   
+    }
+    else 
+    {
+     myX--;
+    }
+    if (Math.random()< 0.5)
+    {
+      myY++;
+    }
+    else
+    {
+      myY--;
+    }    
+   }
+   void show()
+   {
+     ellipse(myX,myY,30,30);
    }
  } 
+ 
