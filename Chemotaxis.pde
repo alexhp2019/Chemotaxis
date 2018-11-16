@@ -1,3 +1,4 @@
+
 Walker [] a  = new Walker [50];
 void setup() {
   noStroke();
@@ -27,7 +28,7 @@ class Walker {
   int z;
   void show () {
     fill(x, y, z);
-    ellipse (myX, myY, 07, 0.5);
+    ellipse (myX, myY, 0.5, 0.5);
   }
 
   void walk () {
