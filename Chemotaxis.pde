@@ -1,4 +1,10 @@
-
+/*
+Simply Beautiful
+By: Alexander
+12 Computer Science
+Halifax, Nova Scotia, Canada
+November, 2018
+*/
 Walker [] a  = new Walker [50];
 void setup() {
   noStroke();
